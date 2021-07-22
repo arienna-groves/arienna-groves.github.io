@@ -1,50 +1,79 @@
 <!DOCTYPE html>
 
-
 <html>
 	<head>
-		<style> 
-			@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Roboto&display=swap');
-
-			/*    
-			  font-family: 'Poppins', sans-serif;
-			  font-family: 'Roboto', sans-serif;
-			*/
-
-			body { 
-			  background-color: #38472e;
-			}
-
-			#wip {
-				width: 70%;
-				height: 160px;
-				position: absolute;
-				top:0;
-				bottom: 0;
-				left: 0;
-				right: 0;
-			  text-align: center;
-				margin: auto;
-			  color: white;
-			}
-
-			#fact { 
-			  font-family: 'Poppins', sans-serif;
-			  font-size: 50px;
-			}
-
-			#hope { 
-			  font-family: 'Roboto', sans-serif;
-			  font-size: 30px;
-			}
-		</style>
-		<title>coming soon</title>
+		<link rel="stylesheet" href="landing.css">
+		<title>arienna groves</title>
 	</head>
 
-	<body>
-		<div id="wip">
-			<h1 id="fact">This is a work in progress!</h1>
-			<p id="hope">stay tuned...</p>
-		</div>
-	</body>
-</html>
+<meta>
+<script src="https://kit.fontawesome.com/a313fb850a.js" crossorigin="anonymous"></script>
+</meta>
+
+<!--nav-->
+<section id="navbar">
+  <div id="navcolor">
+    <div id="navlink-container">
+      <a class="nav-link" href="#welcome-section">home</a>
+      <a class="nav-link" href="#about">about</a>
+      <a class="nav-link" href="#projects">projects</a>
+      <a class="nav-link" href="#contacts">contact</a>
+    </div>
+  </div>
+</section>
+<!--end nav-->
+
+<!--landing-->
+<section id="welcome-section">
+    <h1 id="welcome">welcome!</h1>  
+</section>
+<!--end landing-->
+
+<!--about-->
+<section id="about">
+  <h1>semi-academically taught, semi-self taught.</h1> 
+  <p>building on the basis i learned during my time in paris learning natural language processing.</p>
+</section>
+<!--end about-->
+
+<!--content-->
+<section id="projects">
+  <h1>some of my projects...</h1>
+  <div class="project-container">
+    <a class="project-tile" href="https://codepen.io/collection/kNYkWQ" target="_blank">
+      <img class="project-img" src="https://i.ibb.co/NyTKGxg/fcc-web-design-certificate.png"/>
+      <p class="project-title">fcc responsive web design certificate <i class="far fa-surprise"></i></p></a>
+    
+    <a class="project-tile" href="https://codepen.io/collection/yrLyNx" target="_blank">
+      <img class="project-img" src="https://i.ibb.co/5vz2gD1/fcc-web-design-certificate-1.png"/>
+      <p class="project-title">100 days css challenge <i class="far fa-surprise"></i></p>    
+    </a>
+    
+    <a class="project-tile" href="https://codepen.io/witchgirls/pen/gOWRWjY" target="_blank">
+      <img class="project-img" src="https://i.ibb.co/sySrjzv/fcc-web-design-certificate-2.png"/>
+      <p class="project-title">cat <i class="far fa-surprise"></i></p></a>
+  </div>
+</section>
+<!--end content-->
+
+<!--contacts-->
+<section id="contacts">
+  <p class="kit">let's keep in touch</p>
+  <div id="contacts-container">
+    <a class="profile-link" id="linkedin" href="https://www.linkedin.com/in/arienna-groves/" target="_blank"><i class="fab fa-linkedin-in"></i> linkedin</a>
+    <a class="profile-link" id="fcc" href="https://www.freecodecamp.org/arienna" target="_blank"><i class="fab fa-free-code-camp"></i> freecodecamp</a>
+    <a class="profile-link" id="github" href="https://github.com/arienna-groves" target="_blank"><i class="fab fa-github"></i> github</a>
+    <a class="profile-link" id="goodreads" href="https://www.goodreads.com/user/show/34314159-arienna-groves" target="_blank"><i class="fab fa-goodreads-g"></i> goodreads</a>
+    <a class="profile-link" id="etsy" href="https://www.etsy.com/shop/argthreads" target="_blank"><i class="fab fa-etsy"></i> etsy</a>
+  </div>
+</section>
+<!--end contacts-->
+
+<!--footer-->
+<section id="footer">
+  <div id="foot-container">
+    <p class="foot-disclaim" id="explain">a constant work in progress.</p>
+    <p class="foot-disclaim" id="copy"><i class="far fa-copyright"></i> free to use for ethical reasons <span id="heart"><i class="far fa-heart"></i></span></p>
+  </div>
+</section>
+<!--end footer-->
