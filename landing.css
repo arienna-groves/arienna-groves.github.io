@@ -34,7 +34,7 @@ body, html {
   background: var(--platinum);
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 600px) {
   body { 
     padding-bottom: 114px;
   }
@@ -100,7 +100,7 @@ body, html {
   align-items: center;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 600px) {
   .name { 
   display: none;
   }
@@ -142,9 +142,9 @@ body, html {
   font-size: 150px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 600px) {
   #welcome { 
-    font-size: 100px;
+    font-size: 85vw;
   }
 }
 /**end landing**/
@@ -224,7 +224,7 @@ body, html {
   color: var(--huntergreen);
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 600px) {
   #projects { 
     padding: 0px;
     width: 100vw;
@@ -277,7 +277,7 @@ body, html {
   transform: scale(1.5, 1.5);
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 600px) {
   #contacts { 
     height: auto;
   }
@@ -320,7 +320,7 @@ body, html {
   color: var(--laurelgreen);
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 600px) {
   #footer { 
   font-size: 20px;
   }
