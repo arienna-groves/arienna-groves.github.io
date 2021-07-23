@@ -5,19 +5,18 @@
 
 /**colors**/
 :root { 
-  --black: #252223;
   --extra-dark: #453E40;
   --dark: #5e5759;
-  --medium: #918A8C;
-  --glossygrape: #cec7d6;
-  --thistle: #e8e4ec;
-  --shadowblue: #8597b3;
-  --tealblue: #44788a;
-  --eminence: #772d8b;
-  --royalpurple: #78668f;
-  --darkbluegrey: #747a9a;
-  --darkseagreen: #86b197;
-  --lightgreen: #a1ef8b;
+  --richblack: #090C08;
+  --pinetree: #1C2518;
+  --kombugreen: #384a30;
+  --huntergreen: #3F553A;
+  --feldgrau: #5f715b;
+  --laurelgreen: #a4bc9f;
+  --ashgreen: #C6D5C3;
+  --lightgrey: #CBCDCC;
+  --platinum: #EBEBEB;
+  --silverpink: #C1A5A9;
 }
 /**end colors**/
 
@@ -31,8 +30,8 @@ body, html {
   margin: 0px; 
   padding: 0px;
   overflow-x: hidden; 
-  scroll-behavior: smooth;
-  background: var(--thistle);
+  scroll-behavior: smooth; 
+  background: var(--platinum);
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
@@ -48,15 +47,28 @@ body, html {
   width: 100%;
   height: 70px;
   background: grey;
+  font-family: 'Poppins', sans-serif;
 }
 
 #navcolor { 
-  background: var(--darkbluegrey);
+  background: var(--pinetree);
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+.name { 
+  position: absolute;
+  height: 100%;
+  width: auto;
+  font-size: 25px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 70px;
+  left: 25px;
+  color: var(--laurelgreen);
 }
 
 #navlink-container { 
@@ -71,9 +83,8 @@ body, html {
 }
 
 .nav-link { 
-  font-family: 'Poppins', sans-serif;
   font-size: 25px;
-  color: var(--darkseagreen);
+  color: var(--laurelgreen);
   text-decoration: none;
   padding: 0px 10px;
   display: flex;
@@ -83,20 +94,26 @@ body, html {
 }
 
 .nav-link:hover { 
-  background-color: var(--royalpurple);
-  color: var(--lightgreen);
+  background-color: var(--kombugreen);
+  color: var(--silverpink);
   height: 100%;
   align-items: center;
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 600px) {
+  .name { 
+  display: none;
+  }
+  
   #navlink-container { 
-    align-items: center;
+    align-items: space-between;
+    right: 0;
+    width: 100%;
   }
   
   .nav-link { 
     font-size: 20px;
-    padding: 5px;
+    width: 100%;
   } 
   
   .nav-link:hover { 
@@ -110,26 +127,24 @@ body, html {
   z-index: 5;
   position: relative;
   text-align: center;
-  color: var(--black);
+  color: var(--richblack);
   height: 100vh;
   width: 100%;
-  background-image: url("https://i.ibb.co/C56kHT4/6222570825-6724758fca-o.jpg") ;
-  background-size: cover;
-  background-position: center; 
+  background: linear-gradient(to bottom right, var(--pinetree), 75%, var(--ashgreen)); 
 }
 
 #welcome { 
   position: absolute;
-  top: 50%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-family: "Zen Tokyo Zoo", cursive;
-  font-size: 100px;
+  font-size: 150px;
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 600px) {
   #welcome { 
-    font-size: 40px;
+    font-size: 100px;
   }
 }
 /**end landing**/
@@ -138,7 +153,7 @@ body, html {
 #about { 
   text-align: center;
   padding: 10px 10px;
-  color: var(--black);
+  color: var(--richblack);
 }
 
 #about h1 { 
@@ -155,7 +170,7 @@ body, html {
 /**projects grid**/
 #projects { 
   padding: 5px 10rem;
-  color: var(--black);
+  color: var(--richblack);
 }
 
 #projects h1 { 
@@ -175,7 +190,7 @@ body, html {
 }
 
 .project-tile { 
-  background: var(--glossygrape);
+  background: var(--lightgrey);
   border-radius: 5%;
   text-decoration: none;
   box-shadow: 7px 7px 5px var(--dark);
@@ -193,11 +208,11 @@ body, html {
   font-family: 'Lato', sans-serif;
   font-size: 25px;
   text-align: center;
-  color: var(--black);
+  color: var(--richblack);
 }
 
 .project-title>i {
-  color: var(--glossygrape);
+  color: var(--lightgrey);
   transition: color 0.2s ease-out;
 }
 
@@ -206,10 +221,10 @@ body, html {
 }
 
 .project-tile:hover i { 
-  color: var(--royalpurple);
+  color: var(--huntergreen);
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 600px) {
   #projects { 
     padding: 0px;
     width: 100vw;
@@ -219,24 +234,24 @@ body, html {
     font-size: 25px;
   }
   
+  .project-title>i {
+    color: var(--huntergreen);
+  }
+  
   .project-container { 
-    width: auto;
+    width: 85%;
+    margin: auto;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   }
 }
 
-@media (hover: none) {
-    .project-tile:hover {
-        color: var(--eminence); 
-    }
-}
 /**end projects**/
 
 /**contacts**/
 #contacts { 
   padding: 25px;
   font-size: 30px;
-  color: var(--black);
+  color: var(--richblack);
 }
 
 .kit { 
@@ -252,7 +267,7 @@ body, html {
 
 .profile-link { 
   text-decoration: none;
-  color: var(--darkseagreen);
+  color: var(--feldgrau);
   transition: transform 0.2s linear;
   font-family: 'Lato' sans-serif;
   font-size: 35px;
@@ -262,7 +277,7 @@ body, html {
   transform: scale(1.5, 1.5);
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 600px) {
   #contacts { 
     height: auto;
   }
@@ -275,6 +290,7 @@ body, html {
   .profile-link { 
     justify-content: space-between;
     align-self: center;
+    padding: 5px;
   }
   
   .profile-link:hover { 
@@ -285,11 +301,13 @@ body, html {
 
 /**footer**/
 #footer { 
-  background: var(--royalpurple);
-  color: var(--black);
+  position: relative;
+  background: var(--pinetree);
+  color: var(--silverpink);
   font-family: 'Poppins', sans-serif;
   font-size: 20px;
   margin-top: 37px;
+  height: 100%:
 }
 
 #foot-container { 
@@ -299,19 +317,19 @@ body, html {
 }
 
 #heart { 
-  color: var(--shadowblue);
+  color: var(--laurelgreen);
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 600px) {
   #footer { 
-    font-size: 15px;
+  font-size: 20px;
   }
   
   #foot-container { 
   flex-direction: column;
   }
   
-  #explain { 
+  #copy { 
     display: none;
   }
   
